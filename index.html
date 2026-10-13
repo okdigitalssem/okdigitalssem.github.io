@@ -9,6 +9,8 @@
 <link rel="preload" as="image" href="hero.jpg">
 <style>html{color-scheme:dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>굿웹 GOODWEB | 홈페이지 제작 · 온라인 마케팅</title>
+<link rel="icon" type="image/png" href="logo-symbol.png">
+<link rel="apple-touch-icon" href="logo-symbol.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: a night walk down a street of shop signs. One cinematic frame up top, one pinned sideways walk through the customer's road, then quiet reading sections. Single dark look by design. */
@@ -48,7 +50,7 @@ p{margin:0}
 .top.solid{background:rgba(10,9,20,.82);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:var(--line)}
 .top .wrap{display:flex;align-items:center;gap:22px;padding-block:14px}
 .brand{font-family:var(--display);font-weight:700;font-size:1.2rem;text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:0}
-.brand i{width:10px;height:10px;background:var(--sign);border-radius:50%;box-shadow:0 0 18px 4px rgba(255,201,53,.55)}
+.brand-mark{width:30px;height:30px;flex:none;filter:drop-shadow(0 0 12px rgba(255,201,53,.45))}
 .nav{display:flex;gap:26px;margin-left:auto;font-size:.92rem}
 .nav a{text-decoration:none;color:var(--muted);transition:color .2s}
 .nav a:hover{color:var(--text)}
@@ -339,7 +341,7 @@ section[id]{scroll-margin-top:72px}
 
 <header class="top" id="hdr">
   <div class="wrap">
-    <a class="brand" href="#top"><i></i>굿웹</a>
+    <a class="brand" href="#top"><svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true"><rect x="4" y="4" width="112" height="112" rx="30" fill="#FFC935"/><circle cx="30" cy="30" r="6" fill="#0A0914"/><circle cx="48" cy="30" r="6" fill="#0A0914"/><circle cx="66" cy="30" r="6" fill="#0A0914" opacity=".35"/><path d="M30 70 L50 89 L91 47" fill="none" stroke="#0A0914" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/></svg>굿웹</a>
     <nav class="nav" aria-label="주요 메뉴">
       <a href="#road">손님이 오는 길</a>
       <a href="#works">작업물</a>
