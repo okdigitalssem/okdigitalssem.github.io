@@ -332,6 +332,7 @@ p{margin:0}
 .ways b{font-weight:600;user-select:all}
 @media (max-width:600px){.ways{grid-template-columns:minmax(0,1fr)}}
 footer{background:var(--night);color:var(--muted);font-size:.84rem;border-top:1px solid var(--line);padding-block:24px 100px}
+footer .biz{display:flex;flex-wrap:wrap;gap:4px 14px;margin:0 0 10px;line-height:1.6}footer .biz b{color:var(--text);font-weight:600}footer .biz a{color:inherit}footer .note{margin:0;font-size:.78rem;opacity:.8}
 .float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:50;box-shadow:0 10px 34px rgba(0,0,0,.5);opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .35s,transform .35s var(--ease),visibility 0s .35s}
 .float.show{opacity:1;visibility:visible;transform:none;transition:opacity .35s,transform .35s var(--ease)}
 @media (max-width:760px){.float{padding:12px 20px;font-size:.92rem}}
@@ -654,7 +655,10 @@ section[id]{scroll-margin-top:72px}
 </section>
 </main>
 
-<footer><div class="wrap">굿웹 GOODWEB · 사업자 정보와 개인정보처리방침은 오픈 전에 추가됩니다. 첫 화면과 소개의 사진은 연출 이미지입니다.</div></footer>
+<footer><div class="wrap">
+  <p class="biz"><b>굿웹 GOODWEB</b><span>대표 김영옥</span><span>사업자등록번호 545-43-00683</span><span>경기도 성남시 분당구 판교대장로5길 30, 더샵 판교포레스트 12단지</span><span>전화 <a href="tel:01087332717">010-8733-2717</a></span><span>카카오톡 <a href="https://pf.kakao.com/_mHYFX/chat" target="_blank" rel="noopener">굿웹(GOODWEB)</a></span></p>
+  <p class="note">첫 화면과 소개의 사진은 연출 이미지입니다. © 2026 굿웹 GOODWEB</p>
+</div></footer>
 <a class="btn btn-sign float" href="https://pf.kakao.com/_mHYFX/chat" target="_blank" rel="noopener">카톡 상담</a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
