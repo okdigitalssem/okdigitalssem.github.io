@@ -178,6 +178,14 @@ p{margin:0}
 .pin::before{content:"";width:16px;height:16px;border-radius:50% 50% 50% 0;background:var(--ember);transform:rotate(-45deg);flex:none;margin-inline:4px}
 .pin small,.mock small{color:var(--muted);display:block}
 .phone{border-left:3px solid var(--sign);padding-left:12px}
+a.mock{color:inherit;text-decoration:none;cursor:pointer;transition:border-color .25s,transform .25s}
+a.mock:hover,a.mock:focus-visible{border-color:var(--sign);transform:translateY(-2px)}
+.mock .go{font-size:.84rem;font-weight:700;color:var(--sign);margin-top:4px}
+.chatbar{display:flex;align-items:center;gap:8px;margin-top:4px;border:1px solid var(--line);border-radius:999px;padding:7px 8px 7px 14px;background:rgba(243,241,250,.06)}
+.chatbar span{flex:1;color:var(--muted);font-size:.86rem}
+.chatbar b{background:var(--sign);color:var(--sign-ink);border-radius:999px;padding:5px 14px;font-size:.84rem}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;color:#7BE0A0;font-weight:600}
+.live::before{content:"";width:7px;height:7px;border-radius:50%;background:#7BE0A0;box-shadow:0 0 0 3px rgba(123,224,160,.18)}
 .bub{max-width:82%;padding:9px 14px;border-radius:16px;line-height:1.5}
 .bub.ask{background:var(--haze);justify-self:start;border-bottom-left-radius:4px}
 .bub.ans{background:var(--sign);color:var(--sign-ink);justify-self:end;border-bottom-right-radius:4px;font-weight:600}
@@ -448,28 +456,28 @@ section[id]{scroll-margin-top:72px}
         <span class="no">1</span><span class="tag">Scene 1 · 검색</span>
         <h3>네이버에서 검색합니다</h3>
         <p>손님은 가게 이름이 아니라 지역과 업종으로 찾습니다.</p>
-        <div class="mock"><span class="pill">야탑 과일 배달</span><small>이 검색 결과에 가게가 보여야 합니다.</small></div>
+        <a class="mock" href="#check"><span class="pill">야탑 과일 배달</span><small>이 검색 결과에 가게가 보여야 합니다.</small><span class="go">우리 가게는 검색에 나올까? 1분 자가 진단 →</span></a>
         <p class="does"><b>제가 하는 일</b> 검색 등록, 블로그 글 틀 만들기</p>
       </article>
       <article class="scene">
         <span class="no">2</span><span class="tag">Scene 2 · 지도</span>
         <h3>지도에서 가게를 고릅니다</h3>
         <p>사진, 영업시간, 후기를 보고 갈 곳을 정합니다.</p>
-        <div class="mock"><div class="pin"><div><b>우리 가게</b><small>영업 중 · 오늘 19:00까지 · 사진 12장</small></div></div></div>
+        <a class="mock" href="#check"><div class="pin"><div><b>우리 가게</b><small>영업 중 · 오늘 19:00까지 · 사진 12장</small></div></div><span class="go">우리 가게 지도 정보 점검해 보기 →</span></a>
         <p class="does"><b>제가 하는 일</b> 네이버 플레이스와 구글 지도 등록, 정보 정리</p>
       </article>
       <article class="scene">
         <span class="no">3</span><span class="tag">Scene 3 · 홈페이지</span>
         <h3>홈페이지를 폰으로 봅니다</h3>
         <p>무엇을 얼마에 파는지, 배달이 되는지 확인합니다.</p>
-        <div class="mock"><div class="phone"><b>최소 주문 20,000원</b><small>배달 마감 18:30 · 첫 화면에서 바로 보입니다.</small></div></div>
+        <a class="mock" href="#case"><div class="phone"><b>최소 주문 20,000원</b><small>배달 마감 18:30 · 첫 화면에서 바로 보입니다.</small></div><span class="go">실제로 만든 홈페이지 보기 →</span></a>
         <p class="does"><b>제가 하는 일</b> 폰에 맞춘 홈페이지 제작</p>
       </article>
       <article class="scene">
         <span class="no">4</span><span class="tag">Scene 4 · 문의</span>
         <h3>카톡으로 문의합니다</h3>
         <p>여기까지 와야 비로소 손님이 됩니다.</p>
-        <div class="mock"><span class="bub ask">오늘 배달 되나요?</span><span class="bub ans">네, 18:30까지 주문하시면 됩니다.</span></div>
+        <a class="mock" href="https://pf.kakao.com/_mHYFX/chat" target="_blank" rel="noopener" aria-label="굿웹 카카오톡 1:1 상담창 열기"><span class="live">굿웹 카톡 상담 · 지금 메시지 가능</span><span class="bub ask">오늘 배달 되나요?</span><span class="bub ans">네, 18:30까지 주문하시면 됩니다.</span><span class="chatbar"><span>궁금한 점 보내기</span><b>상담하기</b></span></a>
         <p class="does"><b>제가 하는 일</b> 카카오톡 채널과 자동 응답 설정</p>
       </article>
     </div>
