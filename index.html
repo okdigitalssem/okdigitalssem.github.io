@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <link rel="canonical" href="https://goodweb.it.kr/">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="홈페이지 제작 전문 굿웹(GOODWEB). 홈페이지 제작부터 네이버 플레이스, 인스타그램·릴스, 카카오톡 채널, 유튜브까지 손님이 찾아오는 길을 이어 드립니다.">
+<meta name="description" content="홈페이지 제작 전문 굿웹(GOODWEB). 홈페이지 제작부터 네이버 플레이스, 카카오톡 채널, 광고 영상, 인스타그램·릴스, 유튜브, 상세페이지 제작까지 손님이 찾아오는 길을 이어 드립니다.">
 <meta name="theme-color" content="#0A0914">
 <link rel="preload" as="image" href="hero.jpg">
 <style>html{color-scheme:dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -268,6 +268,15 @@ p{margin:0}
 .pack .for{color:var(--muted);font-size:.94rem}
 .price{border-top:1px dashed var(--line);padding-top:14px;font-size:.92rem;font-weight:600}
 .terms{margin-top:22px;font-size:.92rem;color:var(--muted)}
+.svc-head{margin-top:clamp(56px,8vw,96px)}
+.svc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.svc li{border:1px solid var(--line);border-radius:18px;padding:20px 18px;background:var(--deep);display:grid;gap:6px;align-content:start;min-width:0;transition:border-color .3s}
+.svc li:hover{border-color:rgba(255,201,53,.55)}
+.svc b{font-size:1.02rem;color:var(--text)}
+.svc b::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--sign);margin-right:8px;vertical-align:middle;transform:translateY(-2px)}
+.svc span{font-size:.9rem;color:var(--muted);line-height:1.6;word-break:keep-all}
+@media (max-width:980px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.svc{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:860px){.packs{grid-template-columns:minmax(0,1fr)}}
 
 /* steps */
@@ -372,7 +381,7 @@ section[id]{scroll-margin-top:72px}
   <div class="wrap hero-in">
     <p class="eyebrow fade">GOODWEB <b>자영업자·사업자를 위한 홈페이지 제작<span class="lg"> · 온라인 마케팅</span></b></p>
     <h1><span class="l"><span>검색하면 나오고,</span></span><span class="l"><span><em>누르면 문의가 오는</em></span></span><span class="l"><span>홈페이지를 만듭니다</span></span></h1>
-    <p class="lead fade"><b>홈페이지 제작</b>이 중심입니다. 여기에 네이버 플레이스, 인스타그램·릴스, 카카오톡 채널, 유튜브까지 이어서 손님이 가게를 찾아오는 길 전체를 만들어 드립니다.</p>
+    <p class="lead fade"><b>홈페이지 제작</b>이 중심입니다. 여기에 <span style="white-space:nowrap">네이버 플레이스</span>, <span style="white-space:nowrap">카카오톡 채널</span>, <span style="white-space:nowrap">광고 영상</span>, <span style="white-space:nowrap">인스타그램·릴스</span>, 유튜브, <span style="white-space:nowrap">상세페이지 제작</span>까지 이어서 손님이 가게를 찾아오는 길 전체를 만들어 드립니다.</p>
     <div class="cta-row fade">
       <a class="btn btn-sign" href="https://pf.kakao.com/_mHYFX/chat" target="_blank" rel="noopener"><span>홈페이지 제작 문의</span></a>
       <a class="btn btn-ghost" href="#check"><span>1분 자가 진단<span class="lg"> 해보기</span></span></a>
@@ -381,7 +390,7 @@ section[id]{scroll-margin-top:72px}
   <div class="wrap"><div class="hero-foot fade"><span class="ko">불 켜진 간판은 많습니다</span><span class="cue"><i></i>Scroll</span></div></div>
 </section>
 
-<div class="ticker" aria-hidden="true"><div class="ticker-in"><span>홈페이지 제작</span><i></i><span>네이버 플레이스</span><i></i><span>인스타그램</span><i></i><span>릴스</span><i></i><span>카카오톡 채널</span><i></i><span>유튜브</span><i></i><span>30초 광고 영상</span><i></i><span>홈페이지 제작</span><i></i><span>네이버 플레이스</span><i></i><span>인스타그램</span><i></i><span>릴스</span><i></i><span>카카오톡 채널</span><i></i><span>유튜브</span><i></i><span>30초 광고 영상</span><i></i><span>홈페이지 제작</span><i></i><span>네이버 플레이스</span><i></i><span>인스타그램</span><i></i><span>릴스</span><i></i><span>카카오톡 채널</span><i></i><span>유튜브</span><i></i><span>30초 광고 영상</span><i></i><span>홈페이지 제작</span><i></i><span>네이버 플레이스</span><i></i><span>인스타그램</span><i></i><span>릴스</span><i></i><span>카카오톡 채널</span><i></i><span>유튜브</span><i></i><span>30초 광고 영상</span><i></i></div></div>
+<div class="ticker" aria-hidden="true"><div class="ticker-in"><span>홈페이지 제작</span><i></i><span>네이버 플레이스</span><i></i><span>카카오톡 채널</span><i></i><span>30초 광고 영상</span><i></i><span>인스타그램</span><i></i><span>릴스</span><i></i><span>유튜브</span><i></i><span>상세페이지 제작</span><i></i><span>홈페이지 제작</span><i></i><span>네이버 플레이스</span><i></i><span>카카오톡 채널</span><i></i><span>30초 광고 영상</span><i></i><span>인스타그램</span><i></i><span>릴스</span><i></i><span>유튜브</span><i></i><span>상세페이지 제작</span><i></i><span>홈페이지 제작</span><i></i><span>네이버 플레이스</span><i></i><span>카카오톡 채널</span><i></i><span>30초 광고 영상</span><i></i><span>인스타그램</span><i></i><span>릴스</span><i></i><span>유튜브</span><i></i><span>상세페이지 제작</span><i></i><span>홈페이지 제작</span><i></i><span>네이버 플레이스</span><i></i><span>카카오톡 채널</span><i></i><span>30초 광고 영상</span><i></i><span>인스타그램</span><i></i><span>릴스</span><i></i><span>유튜브</span><i></i><span>상세페이지 제작</span><i></i></div></div>
 
 <section class="works" id="works">
   <div class="wrap">
@@ -556,6 +565,13 @@ section[id]{scroll-margin-top:72px}
       </article>
     </div>
     <p class="terms">제작에는 시안 1개와 수정 2회가 들어 있습니다. 도메인처럼 외부에 내는 비용은 따로 알려드립니다.</p>
+
+    <div class="head svc-head" data-rv>
+      <p class="eyebrow">All Services <b>굿웹이 하는 일 전체</b></p>
+      <h2>하나씩도 맡기실 수 있습니다</h2>
+      <p class="lead">세트가 아니어도 괜찮습니다. 필요한 것만 골라 말씀해 주세요.</p>
+    </div>
+    <ul class="svc"><li data-rv style="--d:0.00s"><b>홈페이지 제작</b><span>폰에 맞춘 가게·회사 홈페이지. 도메인 구매와 연결까지 해 드립니다.</span></li><li data-rv style="--d:0.06s"><b>상세페이지 제작</b><span>스마트스토어·쇼핑몰 상품을 사고 싶게 보여주는 상세페이지.</span></li><li data-rv style="--d:0.12s"><b>네이버 플레이스</b><span>가게 등록, 사진·메뉴·영업시간 정리, 소식 올리기.</span></li><li data-rv style="--d:0.18s"><b>카카오톡 채널</b><span>채널 개설, 자동 응답, 홈페이지와 플레이스에 상담 버튼 연결.</span></li><li data-rv style="--d:0.00s"><b>30초 광고 영상</b><span>기획, 장면, 자막, 내레이션, 음악까지 한 편으로 완성.</span></li><li data-rv style="--d:0.06s"><b>인스타그램</b><span>계정 정리, 프로필 꾸미기, 게시물과 글 틀 만들기.</span></li><li data-rv style="--d:0.12s"><b>릴스·숏폼</b><span>인스타 릴스와 유튜브 쇼츠에 바로 올리는 세로 영상.</span></li><li data-rv style="--d:0.18s"><b>유튜브</b><span>채널 개설과 꾸미기, 쇼츠 올리기, 홈페이지 연결.</span></li><li data-rv style="--d:0.00s"><b>네이버 블로그</b><span>가게 소개 글과 후기형 글 틀, 원하시면 대신 올려 드립니다.</span></li><li data-rv style="--d:0.06s"><b>카드뉴스·홍보 이미지</b><span>SNS 카드뉴스, 상품 사진 보정, 광고용 이미지.</span></li><li data-rv style="--d:0.12s"><b>구글 지도 등록</b><span>구글 검색과 지도에도 가게가 나오게 등록합니다.</span></li><li data-rv style="--d:0.18s"><b>검색 등록</b><span>네이버·구글에 홈페이지가 검색되도록 등록합니다.</span></li></ul>
   </div>
 </section>
 
@@ -654,7 +670,7 @@ section[id]{scroll-margin-top:72px}
       <div>
         <p class="eyebrow">About <b>만드는 사람</b></p>
         <h2>굿웹입니다</h2>
-        <p>사장님 옆에서 온라인을 대신 챙깁니다. 홈페이지, 네이버 플레이스, 카카오톡 채널, 블로그, 인스타그램·릴스, 유튜브 영상까지 한 사람이 이어서 만듭니다.</p>
+        <p>사장님 옆에서 온라인을 대신 챙깁니다. 홈페이지, 네이버 플레이스, 카카오톡 채널, 광고 영상, 블로그, 인스타그램·릴스, 유튜브, 상세페이지 제작까지 한 사람이 이어서 만듭니다.</p>
         <p class="note">사장님이 장사에만 집중하실 수 있게 하는 것이 제 일입니다.</p>
       </div>
     </div>
